@@ -15,37 +15,122 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 30px;
-    width: 70%;
+    width: 60%;
     padding: 5px 0px;
     margin: auto;
     margin-top: 10px;
     cursor: pointer;
 }
-.nav-logo{
-    
-}
+
+.nav-logo {}
+
 .nav-items ul {
     list-style-type: none;
     display: flex;
 
 }
 
-.nav-items ul li {
+.nav-items ul li {}
+
+.nav-items ul li a {
     margin-left: 20px;
     font-weight: 600;
     color: #7D7D7D;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: #7D7D7D;
 }
-.nav-items ul li:hover {
+
+.nav-items ul li a:hover {
     color: black;
-    
-}.nav-items ul li:active {
+
+}
+
+.nav-items ul li a:active {
     color: black;
 }
+
 .main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    margin: 20px auto;
+    width: 60%;
+    margin: 20px 20%;
 }
+
+.hero {
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-tag {
+
+    height: 450px;
+    width: 830px;
+    float: left;
+    margin-right: 15px;
+    background-image: url(assets/images/hero-tag.svg);
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    border: none;
+}
+
+.hero-items {
+    padding: 40px;
+
+}
+
+.hero-items h1 {
+    width: 700px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 47px;
+    margin-bottom: 70px;
+
+}
+
+.hero-items p {
+    width: 600px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 120px;
+}
+.cont-btn{
+    height: 50px;
+    width: 175px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.cont-btn:hover{
+    background-color: rgb(40, 40, 40);
+}
+.btn{
+    height: 48px;
+    width: 48px;
+    border: none;
+    border-radius: 50%;
+}
+.hero-img {
+    height: 450px;
+    width: 300px;
+    float: right;
+    background-image: url(assets/images/hero-tag.svg);
+    border-radius: 30px;
+    border: none;
+}
+
+.hero-img img {
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 30px;
+    border: none;
+}
+
+
