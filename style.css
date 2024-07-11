@@ -189,3 +189,41 @@ body {
     border-radius: 30px;
     border: none;
 }
+
+/*MEDIA QUERIES*/
+@media  (max-width: 1366px) {
+    .hero-tag {
+
+        height: 450px;
+        width: 530px;
+    }
+    
+    .hero-items {
+        padding: 30px;
+    
+    }
+    
+    .hero-items h1 {
+        width: 550px;  
+    }
+    
+    .hero-items p {
+        width: 500px;
+    }
+    .hero-img {
+        height: 450px;
+        width: 250px;
+        float: right;
+        background-image: url(assets/images/hero-tag.svg);
+        border-radius: 30px;
+        border: none;
+    }
+    
+    .hero-img img {
+        width: 250px;
+        height: 450px;
+        object-fit: cover;
+        border-radius: 30px;
+        border: none;
+    }
+}
