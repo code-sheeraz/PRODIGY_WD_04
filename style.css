@@ -95,7 +95,8 @@ body {
     line-height: 24px;
     margin-bottom: 120px;
 }
-.cont-btn{
+
+.cont-btn {
     height: 50px;
     width: 175px;
     font-size: 14px;
@@ -106,16 +107,72 @@ body {
     border-radius: 30px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
+    margin-left: 15px;
 }
-.cont-btn:hover{
-    background-color: rgb(40, 40, 40);
+
+.cont-btn:hover {
+    background-color: rgb(52, 52, 52);
 }
-.btn{
+
+.buttons {
+    display: flex;
+}
+
+.btn {
     height: 48px;
     width: 48px;
     border: none;
     border-radius: 50%;
+    margin-left: 15px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+.btn a:hover{
+    text-decoration: none;
+    color: white;
+}
+.btn-git i {
+    font-size: 28px;
+
+}
+
+.btn-git:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-insta i {
+    font-size: 25px;
+}
+
+.btn-insta:hover {
+    background: linear-gradient(to right,
+            #833ab4, #fd1d1d, #fcb045);
+    color: white;
+}
+
+.btn-x i {
+    font-size: 25px;
+}
+
+.btn-x:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-link i {
+    font-size: 25px;
+}
+
+.btn-link:hover {
+    background-color: #0077B5;
+    color: white;
+}
+
 .hero-img {
     height: 450px;
     width: 300px;
@@ -132,5 +189,3 @@ body {
     border-radius: 30px;
     border: none;
 }
-
-
