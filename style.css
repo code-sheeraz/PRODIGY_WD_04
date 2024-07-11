@@ -127,14 +127,17 @@ body {
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
-.btn a{
+
+.btn a {
     text-decoration: none;
     color: black;
 }
-.btn a:hover{
+
+.btn a:hover {
     text-decoration: none;
     color: white;
 }
+
 .btn-git i {
     font-size: 28px;
 
@@ -175,41 +178,101 @@ body {
 
 .hero-img {
     height: 450px;
-    width: 300px;
+    width: 290px;
     float: right;
-    background-image: url(assets/images/hero-tag.svg);
+    background-image: url(assets/images/Sheeraz.png);
     border-radius: 30px;
     border: none;
 }
 
 .hero-img img {
-    width: 300px;
+    width: 290px;
     height: 450px;
     object-fit: cover;
     border-radius: 30px;
     border: none;
 }
+.work{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 600;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    margin: 20px 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj {
+    background-color: #0077B5;
+    height: 510px;
+    width: 530px;
+    margin: 10px;
+    border-radius: 30px;
+    transition: 0.3s ease-in-out;
+}
+
+.proj:hover{
+    transform: scale(1.04);
+}
+
+.proj-1 img {
+    object-fit: cover;
+    height: 510px;
+    width: 530px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.proj-2 img {
+    object-fit: cover;
+    height: 510px;
+    width: 530px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.proj-3 img {
+    object-fit: cover;
+    height: 510px;
+    width: 530px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.proj-4 img {
+    object-fit: cover;
+    height: 510px;
+    width: 530px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
 
 /*MEDIA QUERIES*/
-@media  (max-width: 1366px) {
+@media (max-width: 1366px) {
     .hero-tag {
 
         height: 450px;
         width: 530px;
     }
-    
+
     .hero-items {
         padding: 30px;
-    
+
     }
-    
+
     .hero-items h1 {
-        width: 550px;  
+        width: 550px;
     }
-    
+
     .hero-items p {
         width: 500px;
     }
+
     .hero-img {
         height: 450px;
         width: 250px;
@@ -218,7 +281,7 @@ body {
         border-radius: 30px;
         border: none;
     }
-    
+
     .hero-img img {
         width: 250px;
         height: 450px;
