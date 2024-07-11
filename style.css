@@ -192,12 +192,14 @@ body {
     border-radius: 30px;
     border: none;
 }
-.work{
+
+.work {
     display: flex;
     justify-content: center;
     font-size: 48px;
     font-weight: 600;
 }
+
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -209,20 +211,20 @@ body {
 
 .proj {
     background-color: #0077B5;
-    height: 510px;
+    height: 530px;
     width: 530px;
     margin: 10px;
     border-radius: 30px;
     transition: 0.3s ease-in-out;
 }
 
-.proj:hover{
+.proj:hover {
     transform: scale(1.04);
 }
 
 .proj-1 img {
     object-fit: cover;
-    height: 510px;
+    height: 530px;
     width: 530px;
     border: 1px solid black;
     border-radius: 30px;
@@ -230,7 +232,7 @@ body {
 
 .proj-2 img {
     object-fit: cover;
-    height: 510px;
+    height: 530px;
     width: 530px;
     border: 1px solid black;
     border-radius: 30px;
@@ -238,7 +240,7 @@ body {
 
 .proj-3 img {
     object-fit: cover;
-    height: 510px;
+    height: 530px;
     width: 530px;
     border: 1px solid black;
     border-radius: 30px;
@@ -246,7 +248,7 @@ body {
 
 .proj-4 img {
     object-fit: cover;
-    height: 510px;
+    height: 530px;
     width: 530px;
     border: 1px solid black;
     border-radius: 30px;
@@ -288,5 +290,16 @@ body {
         object-fit: cover;
         border-radius: 30px;
         border: none;
+    }
+
+    .proj {
+        height: 430px;
+        width: 400px;
+        
+    }
+
+    .proj>img {
+        height: 430px;
+        width: 400px;
     }
 }
