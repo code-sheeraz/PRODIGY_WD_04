@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Open Sans";
 }
 
 body {
@@ -202,7 +203,7 @@ body {
 
 .projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     width: 60%;
     margin: 20px 20%;
     justify-content: center;
@@ -210,9 +211,8 @@ body {
 }
 
 .proj {
-    background-color: #0077B5;
-    height: 530px;
-    width: 530px;
+    height: 400px;
+    width: 350px;
     margin: 10px;
     border-radius: 30px;
     transition: 0.3s ease-in-out;
@@ -222,38 +222,67 @@ body {
     transform: scale(1.04);
 }
 
-.proj-1 img {
+.proj>img {
     object-fit: cover;
-    height: 530px;
-    width: 530px;
-    border: 1px solid black;
+    height: 400px;
+    width: 350px;
     border-radius: 30px;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.378);
 }
 
-.proj-2 img {
-    object-fit: cover;
-    height: 530px;
-    width: 530px;
-    border: 1px solid black;
+.proj>h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.proj >h3 a{
+    text-decoration: none;
+    color: black;   
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 60%;
+    margin: 20px 20%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+.about-items{
+    
+    width: 700px;
+    height: 450px;
+    float: right;
+    padding: 20px;
     border-radius: 30px;
+    margin-right: 15px;
+}
+.about-items h1{
+    font-size: 49px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+.about-items >p {
+    width: 600px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 120px;
 }
 
-.proj-3 img {
-    object-fit: cover;
-    height: 530px;
-    width: 530px;
-    border: 1px solid black;
-    border-radius: 30px;
+.about-btn{
+    background-color: #FFEC4B;
 }
-
-.proj-4 img {
+.about-img img{
+    float: left;
+    height: 500px;
+    width: 400px;
+    border-radius: 35px;
     object-fit: cover;
-    height: 530px;
-    width: 530px;
-    border: 1px solid black;
-    border-radius: 30px;
 }
-
 /*MEDIA QUERIES*/
 @media (max-width: 1366px) {
     .hero-tag {
@@ -278,28 +307,125 @@ body {
     .hero-img {
         height: 450px;
         width: 250px;
-        float: right;
-        background-image: url(assets/images/hero-tag.svg);
-        border-radius: 30px;
-        border: none;
     }
 
     .hero-img img {
         width: 250px;
         height: 450px;
-        object-fit: cover;
-        border-radius: 30px;
-        border: none;
     }
 
     .proj {
-        height: 430px;
-        width: 400px;
-        
+        height: 230px;
+        width: 230px;
+
     }
 
     .proj>img {
-        height: 430px;
-        width: 400px;
+        height: 230px;
+        width: 230px;
+    }
+    .proj>h3{
+        font-size: 16px;
+    }
+
+    .about-items{
+    
+        height: 450px;
+        width: 530px;
+        padding: 20px;
+    }
+    .about-items h1{
+        font-size: 49px;
+        margin-bottom: 100px;
+    }
+    .about-items >p {
+        width: 500px;
+        font-size: 16px;
+        margin-bottom: 120px;
+    }
+    
+    .about-img img{
+        height: 500px;
+        width: 300px;
+    }
+}
+@media (max-width: 1280px){
+    .hero-tag {
+
+        height: 450px;
+        width: 500px;
+    }
+
+    .hero-items {
+        padding: 30px;
+
+    }
+
+    .hero-items h1 {
+        width: 550px;
+    }
+
+    .hero-items p {
+        width: 500px;
+    }
+
+    .hero-img {
+        height: 450px;
+        width: 250px;
+    }
+
+    .hero-img img {
+        width: 250px;
+        height: 450px;
+    }
+
+    .proj {
+        height: 230px;
+        width: 230px;
+
+    }
+
+}
+
+@media (max-width: 1024px){
+    .hero-tag {
+
+        height: 450px;
+        width: 350px;
+    }
+
+    .hero-items {
+        padding: 20px;
+
+    }
+
+    .hero-items h1 {
+        width: 350px;
+    }
+
+    .hero-items p {
+        width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .hero-img {
+        height: 450px;
+        width: 240px;
+    }
+
+    .hero-img img {
+        width: 250px;
+        height: 450px;
+    }
+    .cont-btn{
+        width: 100px;
+        height: 30px;
+    }
+    .btn{
+        width: 30px;
+        height: 30px;
+    }
+    .btn i{
+        font-size: 15px;
     }
 }
