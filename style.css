@@ -745,7 +745,7 @@ body {
     }
 
     .contact-items {
-        height: auto;
+        height: 300px;
         width: 80%;
         float: none;
         text-align: center;
